@@ -1,3 +1,24 @@
+function checaIdade(idade) {
+ 	return new Promise((resolve,reject)=>{
+	 	setTimeout(function(){
+		 	if(idade >= 18 ) resolve();
+		 	reject();
+		 	},2000); 
+	});
+}
+checaIdade(18)
+ .then(function() {
+ console.log("Maior que 18");
+ })
+ .catch(function() {
+ console.log("Menor que 18");
+ });
+
+
+
+
+
+
 var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var btnElement = document.querySelector('#app button');
